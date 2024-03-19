@@ -1,0 +1,32 @@
+{
+	"name": "crud-mixin",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "CRUD mixins for JavaScript. Use cases: Manipulating data, creating plugin systems, and creating data-oriented coupling middleware.",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"test": "npm run build && node test.mjs",
+		"build": "tsc src/index.ts src/lib/unitTest.ts --module nodenext --lib es6 --outDir dist/ && cp src/index.d.ts dist/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Floofies/crud-mixin.git"
+	},
+	"keywords": [
+		"mixin",
+		"crud",
+		"middleware",
+		"plugins"
+	],
+	"author": "Dani Glore",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Floofies/crud-mixin/issues"
+	},
+	"homepage": "https://github.com/Floofies/crud-mixin#readme",
+	"devDependencies": {
+		"@types/node": "^18.15.13",
+		"typescript": "^5.3.3"
+	}
+}
